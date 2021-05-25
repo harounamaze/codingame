@@ -1,0 +1,12 @@
+function isOnEvenPosition(table,value) {
+  for(var i=0; i<table.length; i++) {
+    if(table[i] === value) {
+      return i % 2 === 0
+    }
+  }
+}
+
+var t=[18,4,8,9,0];
+var v=8;
+
+console.log(isOnEvenPosition(t,v));
